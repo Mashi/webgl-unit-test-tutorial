@@ -10,13 +10,16 @@
     "ndarray": "^1.0.18",
     "save-pixels": "^2.3.4",
     "tape": "^4.6.3",
-    "webgl-to-img-stream": "^1.0.0"
+    "webgl-to-img-stream": "^1.0.0",
+    "snyk": "^1.41.1"
   },
   "devDependencies": {
     "standard": "^10.0.2"
   },
   "scripts": {
-    "test": "standard && node tutorial.js"
+    "test": "standard && node tutorial.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -37,5 +40,6 @@
   "bugs": {
     "url": "https://github.com/chinedufn/webgl-unit-test-tutorial/issues"
   },
-  "homepage": "https://github.com/chinedufn/webgl-unit-test-tutorial#readme"
+  "homepage": "https://github.com/chinedufn/webgl-unit-test-tutorial#readme",
+  "snyk": true
 }
